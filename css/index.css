@@ -1,60 +1,69 @@
 #merge {
     display: flex;
-    justify-content: center; 
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1%;
+}
+
+.container {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 540px;
+    height: 50%;
+
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+
 }
 
 #sidebar {
     display:flex;
-    flex-flow: column;
-    justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
     align-items: center;
 
     background-color: rgb(8, 8, 8);
 
-    color: white !important;
-    
-    height: 65vh;
-    width: 30vw;
+    color: white;
 
-    gap: 5%;
+    border: 2px solid black;
+    border-radius: 15px;
 
-    margin-top: 5%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    max-width: 450px;
+    min-height: 700px;
+
+    padding: 0 10% 0 10%;
 }
 
-#sidebar>a {
+#sidebar>a { /* SHOW ME - BUTTON */
     color: white;
     background-color: black;
+
+    font-size: 1.5rem;
+
     border: 2px solid white;
     border-radius: 10px;
+    padding: 5%;
 
     text-decoration: none;
 }
 
-.intro {
+#intro {
     display:flex;
     flex-flow: column;
+    justify-content: space-between;
 
     background-color: rgb(255, 255, 255);
     
-    height: 90vh;
-    width: 45%;
-    margin: 5%;
+    min-height: 700px;
+    max-width: 1500px;
 
     gap: 2.5%;
 }
 
-.intro>a {
-    padding: .5%;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-top: 2%;
-    width: 20%;
-    font-size: 1rem;
-}
+
 
 #links {
     display:flex;
@@ -64,8 +73,11 @@
 
 #links > a {
     font-size: 1.5rem;
-    padding: 1%;
-    border: 3px solid black;
+
+    
+    border: 2px solid black;
     border-radius: 10px;
+    padding: 3%;
+
     text-decoration: none;
 }
