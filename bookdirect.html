@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Direct - J Collection</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/bookdirect.css">
 </head>
 
 <body>
@@ -22,8 +23,8 @@
 
     <h2>FEAR NO MORE, YOU MAY REST.</h2>
 
-    <section id="scrollable">
-        <section id="jurassic">
+    <section id="scrollable" data-mouse-down-at="0" data-prev-percentage="0" data-percentage="0">
+        <section class="image" id="jurassic">
             <img src="" alt="" draggable="false">
             <h2>JURASSIC RESORT</h2>
             <ul>
@@ -34,7 +35,7 @@
             </ul>
             <a href="#jurassic_desc">LEARN MORE</a>
         </section>
-        <section id="prehistoric">
+        <section class="image" id="prehistoric">
             <img src="" alt="" draggable="false">
             <h2>PREHISTORIC LODGE</h2>
             <ul>
@@ -43,9 +44,9 @@
                 <li>Comfortable accommodations in a serene natural setting</li>
                 <li>Learn about the island's prehistoric history</li>
             </ul>
-            <a href="#prehistoric_desc">LEARN MORE</a>
+            <a id="link" href="#prehistoric_desc">LEARN MORE</a>
         </section>
-        <section id="avian">
+        <section class="image" id="avian">
             <img src="" alt="" draggable="false">
             <h2>AVIAN HEIGHTS HOTEL</h2>
             <ul>
@@ -54,9 +55,9 @@
                 <li>Expert guides sharing insights about pterosaurs</li>
                 <li>Tranquil coastal beauty and comfortable accommodations</li>
             </ul>
-            <a href="#avian_desc">LEARN MORE</a>
+            <a id="link" href="#avian_desc">LEARN MORE</a>
         </section>
-        <section id="lost">
+        <section class="image" id="lost">
             <img src="" alt="" draggable="false">
             <h2>LOST WORLD LODGE</h2>
             <ul>
@@ -65,9 +66,9 @@
                 <li>Encounter rare flora and fauna in their natural habitats</li>
                 <li>Comfortable accommodations amidst remote wilderness</li>
             </ul>
-            <a href="#lost_desc">LEARN MORE</a>
+            <a id="link" href="#lost_desc">LEARN MORE</a>
         </section>
-        <section id="cretaceous">
+        <section class="image" id="cretaceous">
             <img src="" alt="" draggable="false">   
             <h2>CRETACEOUS SHORES</h2>
             <ul>
@@ -76,9 +77,9 @@
                 <li>Occasional triceratops sightings near the resort</li>
                 <li>Luxurious amenities and rejuvenating coastal getaway</li>
             </ul>
-            <a href="booking.html">LEARN MORE</a>
+            <a id="link" id="link" href="booking.html">LEARN MORE</a>
         </section>
-        <section id="velociraptor">
+        <section class="image" id="velociraptor">
             <img src="" alt="" draggable="false">
             <h2>VELOCIRAPTOR VISA</h2>
             <ul>
@@ -87,23 +88,24 @@
                 <li>Panoramic vistas of Isla Nublar's dramatic landscapes</li>
                 <li>Comfortable accommodations blending adventure and luxury</li>
             </ul>
-            <a href="#velociraptor_desc">LEARN MORE</a>
+            <a id="link" href="#velociraptor_desc">LEARN MORE</a>
         </section>
     </section>
 
-    <a href="booking.html">CHECK AVAILABILITY</a>
+    <a id="link" href="booking.html">CHECK AVAILABILITY</a>
 
     <hr>
 
     <section id="jurassic_desc">
         <h2>JURASSIC RESORT</h2>
+        <img id="jr" src="https://placehold.co/500x400" alt="">
         <p>Experience the ultimate dinosaur adventure at Jurassic Resort. Nestled amidst lush landscapes and offering
             stunning views, this hotel is the ideal choice for those seeking an immersive prehistoric experience. With
             luxurious accommodations, a range of dinosaur-themed activities, and knowledgeable guides, guests can
             explore the wonders of Isla Nublar up close. Whether it's encountering gentle herbivores or witnessing
             thrilling carnivore feedings, Jurassic Resort promises an unforgettable journey into the ancient world.
         </p>
-        <a href="booking.html">CHECK AVAILABILITY</a>
+        <a id="link" href="booking.html">CHECK AVAILABILITY</a>
     </section>
 
     <hr>
@@ -116,7 +118,7 @@
             prehistoric history from expert guides. After a day of discovery, retreat to the lodge's comfortable
             accommodations, surrounded by stunning natural beauty and tranquility.
         </p>
-        <a href="booking.html">CHECK AVAILABILITY</a>
+        <a id="link" href="booking.html">CHECK AVAILABILITY</a>
     </section>
 
     <hr>
@@ -129,7 +131,7 @@
             creatures from knowledgeable guides. Avian Heights Hotel combines the thrill of dinosaur encounters with the
             tranquility of coastal beauty, making it a captivating choice for nature enthusiasts.
         </p>
-        <a href="booking.html">CHECK AVAILABILITY</a>
+        <a id="link" href="booking.html">CHECK AVAILABILITY</a>
     </section>
 
     <hr>
@@ -142,7 +144,7 @@
             untouched landscapes, guided by experienced naturalists. After an exhilarating day, relax in comfortable
             accommodations and savor the tranquility of this remote paradise.
         </p>
-        <a href="booking.html">CHECK AVAILABILITY</a>
+        <a id="link" href="booking.html">CHECK AVAILABILITY</a>
     </section>
 
     <hr>
@@ -155,7 +157,7 @@
             amenities, stunning beachfront views, and a tranquil ambiance, Cretaceous Shores Resort promises a
             rejuvenating getaway like no other.
         </p>
-        <a href="booking.html">CHECK AVAILABILITY</a>
+        <a id="link" href="booking.html">CHECK AVAILABILITY</a>
     </section>
 
     <hr>
@@ -168,7 +170,7 @@
             luxury. After an action-packed day, unwind in style and relish the panoramic vistas of Isla Nublar's
             dramatic landscapes.
         </p>
-        <a href="booking.html">CHECK AVAILABILITY</a>
+        <a id="link" href="booking.html">CHECK AVAILABILITY</a>
     </section>
 
 
@@ -232,6 +234,8 @@
             <a href="services.html">SERVICES</a>
         </section>
     </footer>
+<script src="css/script.js"></script>
+
 </body>
 
 </html>

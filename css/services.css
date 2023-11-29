@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+}
+
+hr {
+    margin: 1%
+}
+
+h2 {
+    margin: 1% 0 1% 0;
+}
+
+.season, .explarge {
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1%;
+
+    margin-top: 1%;
+}
+
+.season > section, .explarge > section  {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 500px;
+    text-align: left;
+
+    flex-basis: 49%;
+}
+
+#cards {
+    display: flex;
+    flex-flow: row wrap;
+
+    gap: 5%;
+
+    justify-content: center;
+    text-align: left;
+}
+
+.exp {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.exp > section {
+    max-width: 400px;
+}
+
+.button {
+    margin: 0 0 1% 0;
+}
+
+.button > a {
+    display: inline-block;
+
+    font-size: 1.5rem;
+    
+    border: 2px solid black;
+    padding: .5%;
+    margin: .5%;
+
+    text-decoration: none;
+}

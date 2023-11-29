@@ -1,8 +1,17 @@
+body {
+    overflow-x: hidden
+}
+
+p {
+    display: relative;
+    margin-bottom: 3%
+}
+
 #merge {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 1%;
+    gap: 4%;
 }
 
 .container {
@@ -32,7 +41,7 @@
     border-radius: 15px;
 
     max-width: 450px;
-    min-height: 700px;
+    min-height: 800px;
 
     padding: 0 10% 0 10%;
 }
@@ -44,7 +53,6 @@
     font-size: 1.5rem;
 
     border: 2px solid white;
-    border-radius: 10px;
     padding: 5%;
 
     text-decoration: none;
@@ -57,10 +65,8 @@
 
     background-color: rgb(255, 255, 255);
     
-    min-height: 700px;
+    min-height: 500px;
     max-width: 1500px;
-
-    gap: 2.5%;
 }
 
 
@@ -72,12 +78,43 @@
 }
 
 #links > a {
+    display: inline-block;
+
     font-size: 1.5rem;
 
+    margin-top: 4%;
     
     border: 2px solid black;
-    border-radius: 10px;
     padding: 3%;
 
     text-decoration: none;
+}
+
+.nav {
+    position: absolute;
+    z-index: 1;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    width: 100%;
+    justify-content: space-between;
+
+    transform: translate(0, 40vh);
+    padding: 1%;
+
+    opacity: 50%;
+}
+
+#left, #right {
+    width: 60px;
+    height: 60px;
+}
+
+
+.screens {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
 }

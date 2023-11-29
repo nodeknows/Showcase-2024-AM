@@ -1,0 +1,35 @@
+body {
+    overflow-x: hidden;
+
+}
+
+#scrollable {
+    display: flex;
+    gap: 4vmin;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, 0%);
+    overflow: hidden;
+}
+
+#scrollable > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: right center;
+}
+
+#link {
+    border: black solid 2px;
+}
+
+#jurassic_desc {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-self: flex-end;
+    width: 50%;
+}
+
