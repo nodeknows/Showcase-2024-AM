@@ -15,7 +15,6 @@ hr {
 }
 
 li {
-    padding-left: 2%;
     margin-bottom: 1%;
 }
 
@@ -25,4 +24,8 @@ p {
 
 #poss {
     font-size: xxx-large;
+}
+
+p {
+    position: relative;
 }

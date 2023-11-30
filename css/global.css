@@ -8,7 +8,7 @@
     src: url("../fonts/Inter/static/Inter-ExtraLight.ttf");
 }
 
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,7 +41,8 @@ a {
     text-decoration: none;
 }
 
-#whyus, #home {
+#whyus,
+#home {
     text-decoration: underline;
 }
 
@@ -70,7 +71,7 @@ footer {
     justify-content: center;
 }
 
-footer > h2 {
+footer>h2 {
     font-family: 'Inter-light';
     font-size: 1.5rem;
 
@@ -79,37 +80,54 @@ footer > h2 {
     padding-left: 10vw;
 }
 
-footer > section {
+footer>section {
     width: 15vw;
     margin: 1%;
     margin-bottom: 0;
     line-height: 1.1rem;
 }
 
-footer > section > h3 {
+footer>section>h3 {
     font-size: .9rem
 }
 
-footer > section > ul {
+footer>section>ul {
     font-size: .7rem
 }
 
-footer > section > ul {
+footer>section>ul {
     margin: 1%;
 }
 
-footer > section:nth-child(3) {
+footer>section:nth-child(3) {
     width: 35vw;
 }
 
-footer > section:last-child {
+footer>section:last-child {
     width: 100%;
     text-align: center;
     margin-bottom: 1%;
 }
 
-footer > section:last-child > a {
+footer>section:last-child>a {
     padding: 1%;
     color: white;
     text-decoration: none;
+}
+
+/* SCROLLBAR EDITS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkred;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkblue;
 }

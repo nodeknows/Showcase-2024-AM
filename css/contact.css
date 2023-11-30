@@ -1,0 +1,25 @@
+.container {
+    background-color: aqua;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    gap: 3%;
+}
+
+.callus {
+
+}
+
+.desc {
+    width: 30%;
+}
+
+.emailus {
+    
+}
+
+.callus > section, .emailus > section {
+    display: flex;
+}

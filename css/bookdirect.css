@@ -5,7 +5,7 @@ body {
 
 #scrollable {
     display: flex;
-    gap: 4vmin;
+    gap: 5vmin;
     position: relative;
     left: 50%;
     top: 50%;
@@ -33,3 +33,6 @@ body {
     width: 50%;
 }
 
+#jurassic {
+    background-image: url(https://placehold.co/500x400);
+}
