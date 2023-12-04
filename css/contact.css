@@ -1,5 +1,5 @@
 .container {
-    background-color: aqua;
+    margin-top: 2%;
 
     display: flex;
     flex-flow: row wrap;
@@ -8,18 +8,76 @@
     gap: 3%;
 }
 
-.callus {
+#title {
+    text-align: center;
+}
 
+.container h2, .emailus h2, .callus h2 {
+    margin-bottom: 2vh;
+}
+
+.container li {
+    margin-bottom: 2vh;
+}
+
+.container a {
+    color: revert;
+}
+
+.container img {
+    max-width: 35px;
+    max-height: 35px;
+    transform: translateY(-.5vh);
 }
 
 .desc {
     width: 30%;
 }
 
-.emailus {
-    
+.desc p {
+    margin-bottom: 2.5vh;
+}
+
+.desc ul {
+    margin: auto;
+    width: 90%;
 }
 
 .callus > section, .emailus > section {
     display: flex;
+    gap: 1vw;
+}
+
+.callus > ul > li > p, .emailus > ul > li > p {
+    font-family: 'Inter-Bold';
+}
+
+/* staff lol */
+.staff {
+    display: flex;
+    justify-content: center;
+    gap: 0%;
+    margin: 4vh 0 5vh 0;
+}
+
+.staff > section {
+    flex-basis: 25%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    
+    gap: 1vw;
+}
+
+.staff img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.staffdesc {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }

@@ -6,6 +6,7 @@ body > h2, body > h1 {
 img {
     width: 100%;
     height: 100%;
+    
     object-fit: cover;
 }
 
@@ -72,6 +73,11 @@ section.photo {
 
     justify-content: center;
     text-align: left;
+}
+
+.exp img {
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .exp {

@@ -1,14 +1,22 @@
-#pictures {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
-    width: 91%;
-    height: 40%;
+#maintitle {
+    margin: 4vh 0 4vh 0;
+    text-align: center;
 }
 
-column {
+#pictures {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4vh;
+}
+
+#pictures img {
+    width: 50vw;
+    object-fit: cover;
+}
+
+#pictures {
+    margin-bottom: 4vh
 }
