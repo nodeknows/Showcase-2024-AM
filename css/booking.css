@@ -7,6 +7,9 @@ footer {
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    width: 1px;
    
+}
+
+.imgs img {
+    max-width: 100px;
 }
