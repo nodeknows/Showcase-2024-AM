@@ -1,0 +1,102 @@
+body > h2 {
+    margin: 4vh 0 4vh 0;
+    text-align: center;
+}
+
+.introcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh
+}
+
+.intro {
+    width: 35%;
+}
+
+.introcontainer img {
+    width: 100%;
+    max-width: 700px;
+}
+
+.intro > a {
+    display: inline-block;
+
+    font-size: 1.5rem;
+    
+    border: 2px solid black;
+    padding: 1%;
+    margin: 5% 0 0 0;
+
+    text-decoration: none;
+}
+
+.vacancy {
+    width: 100%;
+
+    padding: 2vh 0 2vh 0;
+    margin: 4vh 0 4vh 0;
+
+    background-color: #FFA500;
+    color: white;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2vw;
+}
+
+.vacancy section {
+    max-width: 650px;
+}
+
+.featured h2 {
+    font-size: 3rem;
+    font-family: 'Inter-light';
+
+    color: darkblue;
+}
+
+.featinfo > a {
+    display: inline-block;
+
+    font-size: 1.5rem;
+    
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 1%;
+    margin: 2vh 0 0 0;
+
+    text-decoration: none;
+}
+
+.benefits {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4vw;
+}
+
+hr {
+    margin: 4vh 0 4vh 0;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 4vh;
+}
+
+.statcontainer {
+    display: flex;
+    flex-flow: column wrap;
+
+    gap: 1vh;
+}
