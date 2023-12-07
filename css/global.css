@@ -27,7 +27,7 @@ a {
 /* HEADER STUFF */
 
 .header {
-    background-color: rgb(209, 209, 209);
+    background-color: #b7a99a;
     display: flex;
     justify-content: flex-end;
     align-items: center;
