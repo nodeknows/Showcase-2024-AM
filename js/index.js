@@ -86,11 +86,7 @@ right.onmousedown = function () {
 };
 
 left.onmousedown = function () {
-    console.log('left');
-
     var screenGoal = currentScreen - 1;
-
-    console.log(screenGoal);
 
     if (screenGoal >= 1 && screenGoal !== 0) {
         if (!animating) {
