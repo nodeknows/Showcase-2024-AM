@@ -2,9 +2,7 @@ body > h2 {
     text-align: center;
     letter-spacing: .5rem;
     font-size: .8rem;
-    margin: 4vh 
-    
-    0 4vh 0;
+    margin: 4vh;
 }
 
 .arrows {
@@ -33,7 +31,7 @@ body > h2 {
 
     white-space: nowrap;
     
-    gap: 100px;
+    gap: 2.5vw;
 
 }
 
@@ -43,15 +41,15 @@ body > h2 {
 .image {
     position: relative;
     max-width: 300px;
+    height: 75vh;
 }
 
-.image > img {
-    object-fit: cover;
-    
-    max-height: 75vh;
+.image > img {  
+    height: 100%;
     max-width: 300px;
 
-    background-attachment: fixed;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .image > :nth-child(2) {

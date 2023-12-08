@@ -45,6 +45,7 @@ const addEventListeners = () => {
   slider.addEventListener('mousemove', move, false);
   slider.addEventListener('mouseleave', stopDragging, false);
 }
+
 addEventListeners(); // add now
 
 window.addEventListener('resize', () => {

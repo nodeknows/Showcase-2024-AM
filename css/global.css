@@ -64,6 +64,15 @@ a {
     object-fit: cover;
 }
 
+@media only screen and (max-width: 480px) {
+    .header>figure{
+        margin-left: 0;
+    }
+    .header>h1:last-child {
+        margin-right: 0;
+    }
+}
+
 /* FOOTER STUFF */
 footer {
     background-color: #4A4A4A;

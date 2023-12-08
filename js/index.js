@@ -6,10 +6,10 @@ var s2 = document.getElementById('s2');
 var s3 = document.getElementById('s3');
 
 var currentScreen = 1;
-var animating = false;
-var currentTranslateX = 0; // Store the current translated position
+var animating = false; // NECESSARY! A debounce so animation does not get interrupted.
+var currentTranslateX = 0;
 
-right.onmousedown = function () {
+right.onmousedown = function () { // mousedown is somehow mobile functional as well.
     console.log('right');
 
     var screenGoal = currentScreen + 1;
@@ -41,7 +41,6 @@ right.onmousedown = function () {
                 { duration: 800, fill: 'forwards', easing: 'ease-out' }
             );
 
-            // Update the current translated position for the next animation
             currentTranslateX -= 100;
 
             setTimeout(function () {
@@ -113,7 +112,6 @@ left.onmousedown = function () {
                 { duration: 800, fill: 'forwards', easing: 'ease-out' }
             );
 
-            // Update the current translated position for the next animation
             currentTranslateX += 100;
 
             setTimeout(function () {
@@ -147,7 +145,6 @@ left.onmousedown = function () {
                 { duration: 800, fill: 'forwards', easing: 'ease-out' }
             );
 
-            // Update the current translated position for the next animation
             currentTranslateX -= 200;
 
             setTimeout(function () {
