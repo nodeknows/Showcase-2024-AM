@@ -60,7 +60,7 @@ if (url.includes('bookdirect.html')) {
 
     console.log('Selected Hotel: ' + lastSelectedHotel)
 
-    if (lastSelectedHotel != 'null') {
+    if ((lastSelectedHotel != 'null') || (lastSelectedHotel != null)) {
         console.log('selected fr fr')
 
         hotelEdit.innerHTML = lastSelectedHotel
