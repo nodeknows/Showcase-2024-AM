@@ -1,7 +1,15 @@
+#hotelstuff {
+    width: 100%;
+    text-align: center;
+    padding: 1vh 0 1vh 0;
+    background-color: grey;
+    color: white
+}
+
 body > h1 {
     width: 100%;
     text-align: center;
-    margin-top: 4vh
+    margin: 4vh 0 4vh 0;
 }
 
 .imgscontain {
@@ -11,14 +19,43 @@ body > h1 {
 }
 
 .imgs {
-    width: 50%;
+    width: 90%;
+    max-width: 800px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 5vw;
+    margin-bottom: 4vh;
 }
 
 .imgs img {
-    width: 15vw;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* calendars  */
+.calendars {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    margin-bottom: 4vh;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    margin-bottom: 4vh;
+}
+
+.buttons form input {
+    padding: 1vh 1vw 1vh 1vw
+
 }

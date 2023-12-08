@@ -35,9 +35,6 @@ body > h2 {
 
 }
 
-@media only screen and (max-width: 1024px) {
-}
-
 .image {
     position: relative;
     max-width: 300px;
@@ -68,12 +65,6 @@ body > h2 {
     top: 0;
 
     text-shadow: 1px 1px 2px black;
-}
-
-.image > :nth-child(3) > a {
-    
-
-    
 }
 
 .linkcontainer {
@@ -181,6 +172,13 @@ body > h2 {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 800px) {
+    .desc {
+        padding: 0 4vw 0 4vw;
+    }
+}
+
+
 .desc {
     display: flex;
     flex-wrap: wrap;
@@ -219,3 +217,4 @@ body > h2 {
 .desc > section > ul {
     margin-left: 2vw;
 }
+

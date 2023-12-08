@@ -8,6 +8,8 @@ const slider = document.querySelector('.scrollable');
 const right = document.querySelector('#right');
 const left = document.querySelector('#left');
 
+right.style.opacity = 0 // always start off transparent.
+
 const startDragging = (e) => {
   isTouchActive = e.type.startsWith('touch');
   mouseDown = true;
