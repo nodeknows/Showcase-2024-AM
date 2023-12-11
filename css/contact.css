@@ -2,14 +2,10 @@
     margin-top: 2%;
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
     
     gap: 3%;
-}
-
-#title {
-    text-align: center;
 }
 
 .container h2, .emailus h2, .callus h2 {
@@ -31,7 +27,8 @@
 }
 
 .desc {
-    width: 30%;
+    width: 100%;
+    max-width: 500px;
 }
 
 .desc p {
@@ -82,4 +79,36 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+    .desc {
+        max-width: 100vw;
+        padding: 0 2vw 0 2vw;
+        order: -1
+    }
+    .callus, .emailus {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .callus, .emailus {
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .callus section, .emailus section {
+        transform: translateX(38vw)
+    }
+    .staff {
+        flex-flow: column;
+        gap: 50px;
+    }
 }

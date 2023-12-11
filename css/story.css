@@ -118,8 +118,17 @@ hr {
     width: 100%;
 }
 
-/* 
-@media only screen and (max-width: 640px) {
-    
+
+@media only screen and (max-width: 1024px) {
+    .intro {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
 }
-*/
+
+@media only screen and (max-width: 800px) {
+    .dream section, .proud section, .roadmap section {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+}

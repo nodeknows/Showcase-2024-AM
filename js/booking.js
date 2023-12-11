@@ -58,10 +58,7 @@ if (url.includes('bookdirect.html')) {
 
 } else {
 
-    console.log('Selected Hotel: ' + lastSelectedHotel)
-    lastSelectedHotel = localStorage.getItem('hotel');
-
-    if ((lastSelectedHotel != 'null') || (lastSelectedHotel != null)) {
+    if ((lastSelectedHotel != 'null') && (lastSelectedHotel != null)) {
         console.log('selected fr fr')
 
         hotelEdit.innerHTML = lastSelectedHotel

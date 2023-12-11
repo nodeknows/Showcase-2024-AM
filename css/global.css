@@ -29,6 +29,7 @@ a {
 .header {
     background-color: #b7a99a;
     display: flex;
+    flex-flow: row wrap;
     justify-content: flex-end;
     align-items: center;
     font-size: .7rem;
@@ -36,10 +37,6 @@ a {
 
 .header>h1 {
     margin-right: 2%;
-}
-
-.header>h1:last-child {
-    margin-right: 10px;
 }
 
 .header>h1>a {
@@ -52,10 +49,10 @@ a {
 }
 
 .header>figure {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    max-width: 50px;
     margin-right: auto;
-    margin-left: 10px;
+    margin-left: 1vw;
 }
 
 .header>figure>img {
@@ -66,10 +63,14 @@ a {
 
 @media only screen and (max-width: 480px) {
     .header>figure{
-        margin-left: 0;
+        position: absolute;
+        left: -500vw
     }
-    .header>h1:last-child {
-        margin-right: 0;
+    .header {
+        justify-content: center;
+    }
+    .header>h1{
+        padding: 1vh 2vw 1vh 2vw
     }
 }
 
@@ -95,7 +96,8 @@ footer>h2 {
 }
 
 footer>section {
-    width: 15vw;
+    width: 100%;
+    max-width: 450px;
     margin: 1%;
     margin-bottom: 0;
     line-height: 1.1rem;
@@ -113,12 +115,27 @@ footer>section>ul {
     margin: 1%;
 }
 
-footer>section:nth-child(3) {
-    width: 35vw;
+footer>section:nth-child(2) {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;    
 }
+
+footer>section:nth-child(2) h3 {
+    width: 100%;
+    max-width: 250px;
+}
+
+footer>section:nth-child(2) ul {
+    width: 100%;
+    max-width: 250px;
+}
+
+
 
 footer>section:last-child {
     width: 100%;
+    max-width: 700px;
     text-align: center;
     margin-bottom: 1%;
 }
@@ -127,6 +144,21 @@ footer>section:last-child>a {
     padding: 1%;
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1445px) {
+    footer{
+        padding: 0 2vw 0 2vw;
+        flex-flow: column;
+        align-items: center;
+    }
+    footer>section:nth-child(2) {
+        display: block;
+    }
+    footer>section {
+        width: 100;
+        max-width: 1400px;
+    }
 }
 
 /* SCROLLBAR EDITS */
