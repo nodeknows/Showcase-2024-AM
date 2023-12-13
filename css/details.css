@@ -1,5 +1,10 @@
+body > h1 {
+    margin: 4vh 0 4vh 0;
+    text-align: center;
+}
+
 .whole {
-    margin-top: 5%;
+    margin: 8vh  0 8vh 0;
     display:flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -19,21 +24,21 @@ section input {
     height: 50px;
 }
 
-footer {
-    position: absolute;
-}
-
 .summary {
     width: 500px;
     height: 300px;
 }
 
-.location {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-
+#hotelstuff {
+    width: 100%;
+    text-align: center;
+    padding: 1vh 0 1vh 0;
     background-color: grey;
-    color: white;
+    color: white
+}
+
+body > h1 {
+    width: 100%;
+    text-align: center;
+    margin: 4vh 0 4vh 0;
 }

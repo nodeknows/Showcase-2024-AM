@@ -34,16 +34,6 @@ body > h1 {
     max-width: 150px;
 }
 
-/* calendars  */
-.calendars {
-    width: 100vw;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5vh;
-    margin-bottom: 4vh;
-}
 
 .buttons {
     display: flex;

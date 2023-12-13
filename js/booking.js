@@ -36,7 +36,7 @@ const hotelEdit = document.querySelector('#hotelname')
 const hotelAddressEdit = document.querySelector('#hoteladdress')
 
 if (url.includes('bookdirect.html')) {
-    localStorage.setItem('hotel', null) // reset when visting page
+    localStorage.removeItem('hotel') // reset when visting page
 
     booknow.forEach(element => {
         if (element.getAttribute('href') == 'booking.html') {
@@ -58,7 +58,7 @@ if (url.includes('bookdirect.html')) {
 
 } else {
 
-    if ((lastSelectedHotel != 'null') && (lastSelectedHotel != null)) {
+    if (lastSelectedHotel) {
         console.log('selected fr fr')
 
         hotelEdit.innerHTML = lastSelectedHotel
