@@ -46,6 +46,8 @@ if (url.includes('bookdirect.html')) {
                         console.log('Found it: ' + hotel);
                         localStorage.setItem('hotel', hotel)
                         return;
+                    } else {
+                        console.log('Could NOT find')
                     };
                 });
             }
@@ -61,6 +63,8 @@ if (url.includes('bookdirect.html')) {
 
         hotelEdit.innerHTML = localStorage.getItem('hotel')
         hotelAddressEdit.innerHTML = validHotelAddresses[localStorage.getItem('hotel')]
-    }
+    } else {
+        console.log('Could NOT find')
+    } 
 
 }
