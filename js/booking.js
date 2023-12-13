@@ -58,7 +58,7 @@ if (url.includes('bookdirect')) {
 
 } else {
 
-    if (localStorage.getItem('hotel') != null) {
+    if (localStorage.getItem('hotel') !== null) {
         console.log('selected fr fr')
 
         hotelEdit.innerHTML = localStorage.getItem('hotel')
