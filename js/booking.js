@@ -33,7 +33,7 @@ let url = document.URL;
 const hotelEdit = document.querySelector('#hotelname')
 const hotelAddressEdit = document.querySelector('#hoteladdress')
 
-if (url.includes('bookdirect.html')) {
+if (url.includes('bookdirect')) {
     localStorage.removeItem('hotel') // reset when visting page
 
     booknow.forEach(element => {
