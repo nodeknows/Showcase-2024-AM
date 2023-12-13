@@ -38,7 +38,6 @@ body > h1 {
 .buttons {
     display: flex;
     flex-flow: column;
-    width: 100vw;
     justify-content: center;
     align-items: center;
     gap: 1vh;

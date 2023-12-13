@@ -1,5 +1,3 @@
-var lastSelectedHotel = localStorage.getItem('hotel');
-
 const booknow = document.querySelectorAll('body div a');
 
 const validHotels = [
@@ -58,11 +56,11 @@ if (url.includes('bookdirect.html')) {
 
 } else {
 
-    if (lastSelectedHotel) {
+    if (localStorage.getItem('hotel') != null) {
         console.log('selected fr fr')
 
-        hotelEdit.innerHTML = lastSelectedHotel
-        hotelAddressEdit.innerHTML = validHotelAddresses[lastSelectedHotel]
+        hotelEdit.innerHTML = localStorage.getItem('hotel')
+        hotelAddressEdit.innerHTML = validHotelAddresses[localStorage.getItem('hotel')]
     }
 
 }
