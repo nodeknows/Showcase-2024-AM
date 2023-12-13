@@ -65,6 +65,7 @@ if (url.includes('bookdirect')) {
         hotelAddressEdit.innerHTML = validHotelAddresses[localStorage.getItem('hotel')]
     } else {
         console.log('Could NOT find')
+        console.log(localStorage.getItem('hotel'))
     } 
 
 }
