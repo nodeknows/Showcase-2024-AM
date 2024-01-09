@@ -45,6 +45,7 @@ if (url.includes('bookdirect')) {
                     if (hotel.toLowerCase().includes(hotelName)) {
                         console.log('Found it: ' + hotel);
                         localStorage.setItem('hotel', hotel)
+                        window.open('youtube.com')
                         return;
                     } else {
                         console.log('Could NOT find')
