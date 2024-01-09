@@ -34,7 +34,7 @@ const hotelEdit = document.querySelector('#hotelname')
 const hotelAddressEdit = document.querySelector('#hoteladdress')
 
 if (url.includes('bookdirect')) {
-    localStorage.removeItem('hotel') // reset when visting page
+    //localStorage.removeItem('hotel') // reset when visting page
 
     booknow.forEach(element => {
         if (element.getAttribute('href') == 'booking.html') {
@@ -45,11 +45,9 @@ if (url.includes('bookdirect')) {
                     if (hotel.toLowerCase().includes(hotelName)) {
                         console.log('Found it: ' + hotel);
                         localStorage.setItem('hotel', hotel)
-                        window.open('youtube.com')
                         return;
                     } else {
                         console.log('Could NOT find')
-                        window.open('google.com')
                     };
                 });
             }
