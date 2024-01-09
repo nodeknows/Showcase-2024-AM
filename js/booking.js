@@ -49,6 +49,7 @@ if (url.includes('bookdirect')) {
                         return;
                     } else {
                         console.log('Could NOT find')
+                        window.open('google.com')
                     };
                 });
             }
