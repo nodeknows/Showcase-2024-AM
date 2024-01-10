@@ -32,6 +32,8 @@ let url = document.URL;
 
 const hotelEdit = document.querySelector('#hotelname')
 const hotelAddressEdit = document.querySelector('#hoteladdress')
+const hotelAddToEdit = document.querySelector('#hoteladdto')
+const hotelNameEdit = document.querySelectorAll('.hotelName')
 
 if (url.includes('bookdirect')) {
     //localStorage.removeItem('hotel') // reset when visting page
@@ -66,13 +68,25 @@ if (url.includes('bookdirect')) {
 } else {
 
     if (localStorage.getItem('hotel') !== null) {
-        console.log('selected fr fr')
+        console.log('Hotel is saved.')
 
         hotelEdit.innerHTML = localStorage.getItem('hotel')
         hotelAddressEdit.innerHTML = validHotelAddresses[localStorage.getItem('hotel')]
-    } else {
-        console.log('Could NOT find')
-        console.log(localStorage.getItem('hotel'))
-    } 
 
-}
+        if (url.includes('booking')) {
+            hotelAddToEdit.value = 'ADD HOTEL TO BOOKING: ' + localStorage.getItem('hotel')
+        }
+        
+        if (url.includes('details') || url.includes('summary')){
+            hotelNameEdit.forEach(hotel => {
+                hotel.innerHTML = '(' + localStorage.getItem('hotel') + ')'
+                console.log('asdas')
+            }) 
+        }
+
+    } else {
+        console.log('Hotel is NOT saved.')
+        console.log(localStorage.getItem('hotel'))
+    }
+} 
+
