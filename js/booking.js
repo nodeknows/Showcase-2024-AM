@@ -39,10 +39,12 @@ if (url.includes('bookdirect')) {
     booknow.forEach(element => {
         if (element.getAttribute('href').includes('booking')) {
             console.log('Found element: ' + element.getAttribute('href'))
-            if (skipFirst == 0) { skipFirst = 1; return }
-            console.log('Not First!')
+            if (skipFirst == 0) { 
+                console.log('Skipped first. Continuing..'); 
+                skipFirst = 1; 
+                return 
+            }
             element.onmousedown = (event) => {
-                console.log('Clicked')
                 const hotelName = element.parentElement.parentElement.parentElement.id.replace("_desc", "");
                 validHotels.forEach(hotel => {
                     if (hotel.toLowerCase().includes(hotelName)) {
