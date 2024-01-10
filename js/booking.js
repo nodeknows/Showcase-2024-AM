@@ -37,6 +37,7 @@ if (url.includes('bookdirect')) {
     //localStorage.removeItem('hotel') // reset when visting page
 
     booknow.forEach(element => {
+        console.log('Wrong element')
         if (element.getAttribute('href') == 'booking.html') {
             console.log('Found element')
             if (skipFirst == 0) { skipFirst = 1; return }
