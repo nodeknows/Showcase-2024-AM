@@ -1,6 +1,11 @@
+body { 
+    background-image: url("../imgs/sample_background.jpg");
+}
+
 #maintitle {
     margin: 4vh 0 4vh 0;
     text-align: center;
+    color: white;
 }
 
 #pictures {
@@ -16,6 +21,7 @@
     width: 100%;
     max-width: 800px;
     object-fit: cover;
+    filter: drop-shadow(0 0 .5rem black);
 }
 
 #pictures {

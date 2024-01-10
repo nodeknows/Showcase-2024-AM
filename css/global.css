@@ -76,7 +76,7 @@ a {
 
 /* FOOTER STUFF */
 footer {
-    background-color: #4A4A4A;
+    background-color: dimgray;
     color: white;
 
     bottom: 0;
@@ -142,7 +142,7 @@ footer>section:last-child {
 
 footer>section:last-child>a {
     padding: 1%;
-    color: white;
+    color: #ced02d;
     text-decoration: none;
 }
 
@@ -171,7 +171,7 @@ footer>section:last-child>a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: darkred;
+    background: #ced02d;
 }
 
 ::-webkit-scrollbar-thumb:hover {
