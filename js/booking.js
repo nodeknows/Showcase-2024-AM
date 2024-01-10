@@ -3,7 +3,7 @@ const booknow = document.querySelectorAll('body div a');
 const validHotels = [
     'Jurassic Resort',
     'Prehistoric Lodge',
-    'Avian Heights Lodge',
+    'Avian Heights Hotel',
     'Lost World Lodge',
     'Cretaceous Shores',
     'Velociraptor Visa']
@@ -11,7 +11,7 @@ const validHotels = [
 const validHotelAddresses = {
     'Jurassic Resort': '123 Carnivore Lane, Isla Nublar',
     'Prehistoric Lodge': '456 Velociraptor Avenue, Isla Nublar',
-    'Avian Heights Lodge': '789 Tyrannosaurus Terrace, Isla Nublar',
+    'Avian Heights Hotel': '789 Tyrannosaurus Terrace, Isla Nublar',
     'Lost World Lodge': '321 Sky Soar Street, Isla Nublar',
     'Cretaceous Shores': '567 Long Neck Lane, Isla Nublar',
     'Velociraptor Visa': '890 Horned Way, Isla Nublar'
@@ -20,7 +20,7 @@ const validHotelAddresses = {
 const hotelAvailable = {
     'Jurassic Resort': ['', ''],
     'Prehistoric Lodge': ['', ''],
-    'Avian Heights Lodge': ['', ''],
+    'Avian Heights Hotel': ['', ''],
     'Lost World Lodge': ['', ''],
     'Cretaceous Shores': ['', ''],
     'Velociraptor Visa': ['', '']
