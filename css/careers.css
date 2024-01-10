@@ -1,6 +1,12 @@
+body { 
+    background-image: url("../imgs/sample_background.jpg");
+    color: white;
+}
+
 body > h2 {
     margin: 4vh 0 4vh 0;
     text-align: center;
+    filter: drop-shadow(0 0 8px black);
 }
 
 .introcontainer {
@@ -8,12 +14,17 @@ body > h2 {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 5vh
+    gap: 2vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 2%;
 }
 
 .intro {
     width: 100%;
     max-width: 800px;
+    max-height: 100%;
 }
 
 .introcontainer img {
@@ -26,11 +37,15 @@ body > h2 {
 
     font-size: 1.5rem;
     
-    border: 2px solid black;
+    border: 2px solid yellow;
     padding: 1%;
-    margin: 5% 0 0 0;
+    margin: 5% 0 0 0;   
 
     text-decoration: none;
+}
+
+.intro > a:hover {
+    color: #be0000
 }
 
 .vacancy {
@@ -39,7 +54,7 @@ body > h2 {
     padding: 2vh 0 2vh 0;
     margin: 4vh 0 4vh 0;
 
-    background-color: #FFA500;
+    background-color: #ffa600af;
     color: white;
 
     display: flex;
@@ -81,6 +96,10 @@ body > h2 {
     align-items: center;
 
     gap: 4vw;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 2%;
 }
 
 hr {
@@ -93,6 +112,7 @@ hr {
     align-items: center;
 
     margin-bottom: 4vh;
+    filter: drop-shadow(0 0 8px black);
 }
 
 .statcontainer {

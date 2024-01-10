@@ -1,15 +1,21 @@
+body {
+    color: white;
+    background-image: url("../imgs/sample_background.jpg");
+}   
+
 #hotelstuff {
     width: 100%;
     text-align: center;
     padding: 1vh 0 1vh 0;
-    background-color: grey;
-    color: white
+    background-color: rgba(0, 0, 139, 0.5);
+    color: yellow
 }
 
 body > h1 {
     width: 100%;
     text-align: center;
     margin: 4vh 0 4vh 0;
+    filter: drop-shadow(0 0 8px black);
 }
 
 .imgscontain {
@@ -27,6 +33,7 @@ body > h1 {
     align-items: center;
     gap: 5vw;
     margin-bottom: 4vh;
+    filter: drop-shadow(0 0 8px black);
 }
 
 .imgs img {

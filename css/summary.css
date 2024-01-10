@@ -1,3 +1,8 @@
+body {
+    color: white;
+    background-image: url("../imgs/sample_background.jpg");
+}
+
 .thing {
     display: flex;
     flex-flow: row wrap;
@@ -22,6 +27,16 @@ img {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
+    filter: drop-shadow(0 0 8px black);
+}
+
+.side h3 {
+    padding-bottom: 1%
+}
+
+.side h4 {
+    padding-top: 4%;
+    padding-bottom: 1%;
 }
 
 .whole {
@@ -36,7 +51,7 @@ img {
     width: 100%;
     text-align: center;
     padding: 1vh 0 1vh 0;
-    background-color: grey;
+    background-color: rgba(0, 0, 139, 0.5);
     color: white
 }
 

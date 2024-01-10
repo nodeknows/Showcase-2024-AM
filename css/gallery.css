@@ -6,6 +6,7 @@ body {
     margin: 4vh 0 4vh 0;
     text-align: center;
     color: white;
+    filter: drop-shadow(0 0 8px black);
 }
 
 #pictures {
@@ -21,7 +22,7 @@ body {
     width: 100%;
     max-width: 800px;
     object-fit: cover;
-    filter: drop-shadow(0 0 .5rem black);
+    filter: drop-shadow(0 0 8px black);
 }
 
 #pictures {

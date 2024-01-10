@@ -1,6 +1,12 @@
+body {
+    background-image: url("../imgs/sample_background.jpg");
+}
+
 body > h2, body > h1 {
     text-align: center;
     margin: 2% 0 2% 0;
+    color: white;
+    filter: drop-shadow(0 0 8px black);
 }
 
 section img {
@@ -39,6 +45,7 @@ section.photo {
 
 
 .season, .explarge {
+    filter: drop-shadow(0 0 8px black);
     color: white;
 
     display: inline-flex;
@@ -52,6 +59,7 @@ section.photo {
 
 .explarge {
     margin: 4% 0 4% 0;
+    
 }
 
 .season > section:not(.photo), .explarge > section:not(.photo)  {
@@ -60,12 +68,13 @@ section.photo {
     text-align: left;
     align-self: stretch;
     justify-content: center;
-    background-color: #5B5B5B;
+    background-color: #8b0000;
     padding: 1rem;
     width: 50%;
 }
 
 #cards {
+    
     color: white;
 
     display: flex;
@@ -83,10 +92,11 @@ section.photo {
 }
 
 .exp {
+    filter: drop-shadow(0 0 8px black);
     display: flex;
     flex-flow: column wrap;
     
-    background-color: #5B5B5B;
+    background-color: #00919c;
 }
 
 .exp > section {
@@ -101,6 +111,7 @@ section.photo {
 .button {
     text-align: center;
     margin: 2% 0 2% 0;
+    color: white;
 }
 
 .button > a {
@@ -108,11 +119,16 @@ section.photo {
 
     font-size: 1.5rem;
     
-    border: 2px solid black;
+    border: 2px solid yellow;
+    color: white;
     padding: .5%;
     margin: 1% 0 0 0;
 
     text-decoration: none;
+}
+
+.button > a:hover {
+    color: #be0000
 }
 
 @media only screen and (max-width: 1375px) {
