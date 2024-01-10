@@ -4,6 +4,7 @@ body {
 }
 
 body > h1 {
+    width: 100%;
     margin: 4vh 0 4vh 0;
     text-align: center;
     filter: drop-shadow(0 0 8px black);
@@ -51,11 +52,5 @@ section input {
     text-align: center;
     padding: 1vh 0 1vh 0;
     background-color: rgba(0, 0, 139, 0.5);
-    color: white
-}
-
-body > h1 {
-    width: 100%;
-    text-align: center;
-    margin: 4vh 0 4vh 0;
+    color: yellow
 }

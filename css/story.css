@@ -3,6 +3,15 @@ body {
     color: white;
 }
 
+#scrollindi {
+    position: absolute;
+    bottom: 1.5vh;
+    text-align: center;
+    width: 100%;
+    color: white;
+    filter: drop-shadow(0 0 8px black);
+}
+
 .frontpage img {
     width: 100%;
     height: 100vh;

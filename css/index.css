@@ -1,10 +1,19 @@
 body {
     background-image: url("../imgs/sample_background.jpg");
+    overflow-x: hidden;
 }
 
 #sidebar-text p:not(:last-child), #intro p {
     display: relative;
     margin-bottom: 5%
+}
+
+#scrollindi {
+    position: absolute;
+    bottom: 1.5vh;
+    text-align: center;
+    width: 100%;
+    color: white;
 }
 
 #merge {

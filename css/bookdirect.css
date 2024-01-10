@@ -5,7 +5,7 @@ body {
 
 body > h2 {
     text-align: center;
-    letter-spacing: .5rem;
+    letter-spacing: .2rem;
     font-size: .8rem;
     margin: 4vh;
     filter: drop-shadow(0 0 8px black);
@@ -23,10 +23,12 @@ body > h2 {
 
 #left {
     left: 45vw;
+    filter: invert(100%)
 }
 
 #right {
     right: 45vw;
+    filter: invert(100%)
 }
 
 .scrollable {
